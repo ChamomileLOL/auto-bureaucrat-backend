@@ -1,0 +1,9 @@
+# Dependency directories
+node_modules/
+
+# Environment variables (CRITICAL SECURITY)
+.env
+
+# OS generated files
+.DS_Store
+Thumbs.db

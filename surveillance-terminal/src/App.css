@@ -1,0 +1,52 @@
+body {
+  background-color: #050505;
+  color: #00ff00;
+  font-family: 'Courier New', Courier, monospace;
+  margin: 0;
+  padding: 20px;
+}
+
+.terminal-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  border: 2px solid #00ff00;
+  padding: 20px;
+  box-shadow: 0 0 15px rgba(0, 255, 0, 0.2);
+}
+
+.terminal-header {
+  text-align: center;
+  border-bottom: 1px dashed #00ff00;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+
+.success-text { color: #00ff00; }
+.error-text { color: #ff0000; }
+
+.stats {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-top: 10px;
+  color: #fff;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th, td {
+  border: 1px solid #004400;
+  padding: 12px;
+  text-align: left;
+}
+
+th {
+  background-color: #002200;
+  color: #00ff00;
+}
+
+.variant { color: #ff00ff; font-weight: bold; }
+.biological { color: #ff0000; }

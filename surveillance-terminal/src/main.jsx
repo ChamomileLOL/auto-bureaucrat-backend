@@ -1,0 +1,15 @@
+import { registerSW } from 'virtual:pwa-register'
+
+// Activate the Service Worker for background caching
+registerSW({ immediate: true })
+
+import { StrictMode } from 'react'
+import { createRoot } from 'react-dom/client'
+import './index.css'
+import App from './App.jsx'
+
+createRoot(document.getElementById('root')).render(
+  <StrictMode>
+    <App />
+  </StrictMode>,
+)
