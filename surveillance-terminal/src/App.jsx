@@ -4,7 +4,7 @@ import { io } from 'socket.io-client'; // NEW: Import the client cable
 import './App.css';
 
 // NEW: Hardwire the connection to the backend port
-const socket = io('http://localhost:5050');
+const socket = io('https://auto-bureaucrat-backend.onrender.com');
 
 function App() {
   const [hosts, setHosts] = useState([]);
@@ -14,7 +14,7 @@ function App() {
     // 1. Pull the initial historical ledger when the app loads
     const fetchHistoricalLedger = async () => {
       try {
-        const response = await axios.get('http://localhost:5050/api/pi/hosts');
+        const response = await axios.get('https://auto-bureaucrat-backend.onrender.com/api/pi/hosts');
         setHosts(response.data.data);
         setSystemStatus("SURVEILLANCE ACTIVE: BIOLOGICAL MUTATION TERMINATED.");
       } catch (error) {
